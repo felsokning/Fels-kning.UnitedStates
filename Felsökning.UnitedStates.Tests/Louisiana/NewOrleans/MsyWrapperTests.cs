@@ -33,7 +33,7 @@ namespace Felsökning.UnitedStates.Tests.Louisiana.NewOrleans
 
             var arrival = arrivals.FirstOrDefault();
             arrival.Should().NotBeNull();
-            arrival.ActualTime.Should().NotBeNullOrWhiteSpace();
+            arrival!.ActualTime.Should().NotBeNullOrWhiteSpace();
             arrival.Airline.Should().NotBeNullOrWhiteSpace();
             arrival.AirlineAbbreviation.Should().NotBeNullOrWhiteSpace();
             arrival.AirlineLogo.Should().NotBeNullOrWhiteSpace();
@@ -54,7 +54,7 @@ namespace Felsökning.UnitedStates.Tests.Louisiana.NewOrleans
 
             var departure = departures.FirstOrDefault();
             departure.Should().NotBeNull();
-            departure.ActualTime.Should().NotBeNullOrWhiteSpace();
+            departure!.ActualTime.Should().NotBeNullOrWhiteSpace();
             departure.Airline.Should().NotBeNullOrWhiteSpace();
             departure.AirlineAbbreviation.Should().NotBeNullOrWhiteSpace();
             departure.AirlineLogo.Should().NotBeNullOrWhiteSpace();
