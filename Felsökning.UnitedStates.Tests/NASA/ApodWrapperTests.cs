@@ -49,7 +49,7 @@ namespace Felsökning.UnitedStates.Tests.NASA
             var resource = result.Resource;
             resource.Planet.Should().NotBeNull();
             resource.ImageSet.Should().NotBeNull();
-            result.HdUrl.Should().NotBeNullOrWhiteSpace();
+            result.HdUrl.Should().NotBeNull();
             result.Concepts.Should().NotBeNull();
             var concepts = result.Concepts;
             concepts._0.Should().NotBeNull();

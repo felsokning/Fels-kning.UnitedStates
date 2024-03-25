@@ -4,7 +4,7 @@
 // </copyright>
 // <author>John Bailey</author>
 //-----------------------------------------------------------------------
-namespace Felsökning.UnitedStates.Tests
+namespace Felsökning.UnitedStates.Tests.NationalWeatherService
 {
     [TestClass]
     [ExcludeFromCodeCoverage]
