@@ -34,7 +34,9 @@ namespace Felsökning.UnitedStates.Louisiana.NewOrleans
         /// <returns>An awaitable <see cref="Task{TResult}"/> of <see cref="List{T}"/> of <see cref="Flight"/></returns>
         public async Task<List<Flight>> GetFlightsAsync()
         {
-            return await this.HttpClient.GetAsync<List<Flight>>("/wp-json/flight-status/flights");
+            var timespan = DateTime.UtcNow - DateTime.UnixEpoch;
+            var milliseconds = (long)timespan.TotalMilliseconds;
+            return await this.HttpClient.GetAsync<List<Flight>>($"/wp-json/flight-status/flights?_={milliseconds}");
         }
     }
 }
