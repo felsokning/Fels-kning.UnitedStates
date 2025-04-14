@@ -7,7 +7,7 @@
 namespace Felsökning.UnitedStates.NASA
 {
     /// <summary>
-    ///     Initializes a new instance of the <see cref="ApodWrapper"/> class.
+    ///     Initializes a new instance of the <see cref="ApodWrapper"/> class, which is used to retrieve the Astronomy Picture of the Day (APOD) from the NASA Planetary API.
     /// </summary>
     /// <inheritdoc cref="HttpBase"/>
     /// <inheritdoc cref="IApodWrapper"/>

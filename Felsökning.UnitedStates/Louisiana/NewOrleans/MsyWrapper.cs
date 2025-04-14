@@ -7,8 +7,7 @@
 namespace Felsökning.UnitedStates.Louisiana.NewOrleans
 {
     /// <summary>
-    ///     Initializes a new instance of the <see cref="MsyWrapper"/> class,
-    ///     which is used to query the MSY API for flights to/from MSY.
+    ///     Initializes a new instance of the <see cref="MsyWrapper"/> class, which is used to query the MSY API for flights to/from MSY.
     /// </summary>
     /// <inheritdoc cref="HttpBase"/>
     /// <inheritdoc cref="IMsyWrapper"/>
