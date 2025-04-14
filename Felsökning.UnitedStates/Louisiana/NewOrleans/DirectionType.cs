@@ -11,12 +11,21 @@ namespace Felsökning.UnitedStates.Louisiana.NewOrleans
     [Serializable]
     public enum DirectionType
     {
+        /// <summary>
+        ///     The direction is unknown.
+        /// </summary>
         Unknown,
 
+        /// <summary>
+        ///    Arrivals
+        /// </summary>
         [JsonPropertyName("Arrival")]
         [EnumMember(Value = "Arrival")]
         A,
 
+        /// <summary>
+        ///    Departures   
+        /// </summary>
         [JsonPropertyName("Departure")]
         [EnumMember(Value = "Departure")]
         D,

@@ -7,8 +7,7 @@
 namespace Felsökning.UnitedStates.FAA
 {
     /// <summary>
-    ///     Initializes a new instance of the <see cref="NotamsWrapper"/> class,
-    ///     which is used to wrap calls to the FAA's NOTAMs endpoint.
+    ///     Initializes a new instance of the <see cref="NotamsWrapper"/> class, which is used to wrap calls to the Federal Aviation Administration's (FAA's) Notice to Airmen (NOTAMs) endpoint.
     /// </summary>
     /// <inheritdoc cref="HttpBase"/>
     public class NotamsWrapper : HttpBase
@@ -18,7 +17,7 @@ namespace Felsökning.UnitedStates.FAA
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="NotamsWrapper"/> class,
-        ///     which is used to wrap calls to the FAA's NOTAMs endpoint.
+        ///     which is used to wrap calls to the Federal Aviation Administration's (FAA's) Notice to Airmen (NOTAMs) endpoint.
         /// </summary>
         /// <inheritdoc cref="HttpBase"/>
         public NotamsWrapper()

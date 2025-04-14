@@ -7,7 +7,10 @@
 namespace Felsökning.UnitedStates.NationalWeatherService
 {
     /// <summary>
-    ///     Initializes a new instance of the <see cref="NwsWrapper"/> class.
+    ///     Initializes a new instance of the <see cref="NwsWrapper"/> class, which is used to wrap calls to the National Weather Service (NWS) API.
+    ///     <para>The NWS API provides weather alerts and warnings for the United States.</para>
+    ///     <para>The API requires a valid location code (Universal Geographic Code - UGC) for the area targeted.</para>
+    ///     <para>The UGC can be derived from the latest Census data: https://www2.census.gov/programs-surveys/popest/geographies/2019/all-geocodes-v2019.xlsx</para>
     /// </summary>
     /// <inheritdoc cref="HttpBase"/>
     /// <inheritdoc cref="INwsWrapper"/>
