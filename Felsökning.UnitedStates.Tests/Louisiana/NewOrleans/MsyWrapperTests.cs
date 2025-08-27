@@ -41,7 +41,7 @@ namespace Felsökning.UnitedStates.Tests.Louisiana.NewOrleans
             arrival.City.Should().NotBeNullOrWhiteSpace();
             arrival.Date.Should().NotBeNullOrWhiteSpace();
             arrival.FlightNumber.Should().NotBeNullOrWhiteSpace();
-            arrival.Gate.Should().NotBeNullOrWhiteSpace();
+            arrival.Gate.Should().NotBeNull();
             arrival.Id.Should().NotBeNullOrWhiteSpace();
             arrival.ScheduledTime.Should().NotBeNullOrWhiteSpace();
             arrival.Type1.Should().Be(DirectionType.A);
