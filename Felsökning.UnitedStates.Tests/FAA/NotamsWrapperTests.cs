@@ -15,7 +15,7 @@ namespace Felsökning.UnitedStates.Tests.FAA
         {
             var sut = new NotamsWrapper();
 
-            var exception = await Assert.ThrowsExceptionAsync<ArgumentNullException>(async () => await sut.GetPublishedNotamsForAirportAsync(string.Empty));
+            var exception = await Assert.ThrowsExactlyAsync<ArgumentNullException>(async () => await sut.GetPublishedNotamsForAirportAsync(string.Empty));
 
             exception.Should().NotBeNull();
             exception.Should().BeOfType<ArgumentNullException>();
@@ -26,7 +26,7 @@ namespace Felsökning.UnitedStates.Tests.FAA
         {
             var sut = new NotamsWrapper();
 
-            var exception = await Assert.ThrowsExceptionAsync<ArgumentNullException>(async () => await sut.GetPublishedNotamsForAirportIAsync(string.Empty));
+            var exception = await Assert.ThrowsExactlyAsync<ArgumentNullException>(async () => await sut.GetPublishedNotamsForAirportIAsync(string.Empty));
 
             exception.Should().NotBeNull();
             exception.Should().BeOfType<ArgumentNullException>();
@@ -37,7 +37,7 @@ namespace Felsökning.UnitedStates.Tests.FAA
         {
             var sut = new NotamsWrapper();
 
-            var exception = await Assert.ThrowsExceptionAsync<ArgumentException>(async () => await sut.GetPublishedNotamsForAirportAsync("8675309"));
+            var exception = await Assert.ThrowsExactlyAsync<ArgumentException>(async () => await sut.GetPublishedNotamsForAirportAsync("8675309"));
 
             exception.Should().NotBeNull();
             exception.Should().BeOfType<ArgumentException>();
@@ -48,7 +48,7 @@ namespace Felsökning.UnitedStates.Tests.FAA
         {
             var sut = new NotamsWrapper();
 
-            var exception = await Assert.ThrowsExceptionAsync<ArgumentException>(async () => await sut.GetPublishedNotamsForAirportIAsync("8675309"));
+            var exception = await Assert.ThrowsExactlyAsync<ArgumentException>(async () => await sut.GetPublishedNotamsForAirportIAsync("8675309"));
 
             exception.Should().NotBeNull();
             exception.Should().BeOfType<ArgumentException>();
